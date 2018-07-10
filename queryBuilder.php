@@ -14,15 +14,11 @@ if(!$conn){
   <link href ="css/bootstrap.css" type="text/css" rel="stylesheet"/>
   <link href ="css/query-builder.default.min.css" type="text/css" rel="stylesheet"/>
   <link href ="css/custom.css" type="text/css" rel="stylesheet"/>
-
-
-
-
 </head>
 <body>
 <div class="container">
   <div class="panel panel-default" style="padding:2%;">
-    <form class="form" role="form form-inline">
+
       <div class="row form-group">
         <div class="col-lg-4 ">
           <label>Choose table (s)</label>
@@ -42,9 +38,15 @@ if(!$conn){
           <label>Choose Column(s)</label>
           <select class="form-control" id="columns_select" multiple="multiple" size="1">
           </select>
+
+        </div>
+        <div class="col-lg-4">
+          <p class="row text text-right">
+            <a href="index.php"><button id="exportBtn" name="database_submit" class=" btn btn-warning"> Change database</button></a>
+          </p>
         </div>
     </div>
-    </form>
+
     <div id="builder"></div>
     <div class="panel panel-primary table-wrapper-2">
       <table class="table table-stripped table-responsive-md" border="1" id="generated_table">

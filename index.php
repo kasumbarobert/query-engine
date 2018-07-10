@@ -36,8 +36,14 @@
           $_SESSION["database_name"]=$_POST["database_name"];
           $_SESSION["database_username"]=$_POST["database_username"];
           $_SESSION["database_password"]=$_POST["database_password"];
+          $conn  = mysqli_connect("localhost",$_SESSION["database_username"],$_SESSION["database_password"],$_SESSION["database_name"]);
+          if(!$conn){
+              echo "<p class='text text-danger'> Cannot connet to the database </p>";
+          }
+          else{
+              header("Location:queryBuilder.php");
+          }
 
-          header("Location:queryBuilder.php");
         }
 
      ?>
