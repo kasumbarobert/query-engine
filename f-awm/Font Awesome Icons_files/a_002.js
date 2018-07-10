@@ -1,0 +1,1 @@
+_carbonads_go({"ads":[{"image":"https://launchbit.com/taz-i/6071-harvest-standard.png","statlink":"http://www.launchbit.com/taz/9533-6071-111/","description":"Painless time tracking for creative professionals.","pixel":"https://www.launchbit.com/taz-pixel/9533-6071-111/"}]});
