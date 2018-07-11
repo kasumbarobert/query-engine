@@ -42,7 +42,7 @@ if(!$conn){
         </div>
         <div class="col-lg-4">
           <p class="row text text-right">
-            <a href="index.php"><button id="exportBtn" name="database_submit" class=" btn btn-warning"> Change database</button></a>
+            <a href="index.php"><button  name="database_submit" class=" btn btn-warning"> Change database</button></a>
           </p>
         </div>
     </div>
@@ -127,7 +127,7 @@ if(!$conn){
     // Builds the HTML Table out of myDataList.
     function buildHtmlTable(selector,myDataList) {
       $(selector).empty();
-      $("#exportBtn").hide();
+      //$("#exportBtn").hide();
       var columns = addAllColumnHeaders(myDataList, selector);
       for (var i = 0; i < myDataList.length; i++) {
         var row$ = $('<tr/>');
@@ -139,8 +139,9 @@ if(!$conn){
 
         $(selector).append(row$);
         if(myDataList.length>1){
+
           $("#exportBtn").show();
-          $("#generated_table").DataTable();
+          //$("#generated_table").DataTable();
         }
       }
 }
